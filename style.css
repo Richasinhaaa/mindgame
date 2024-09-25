@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Home Section Styling */
+.home-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #70e1f5 0%, #ffd194 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.content-wrapper {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffeb3b;
+}
+
+.play-btn {
+    font-size: 24px;
+    padding: 15px 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 40px;
+    }
+
+    .play-btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+
+
+/* Play Section Styling */
+.play-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.levels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.level-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.level-btn:hover {
+    background-color: #45a049;
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    display: none; /* Hide by default */
+}
+
+.content .inputs input {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Scorecard Section */
+.scorecard-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.scorecard-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+

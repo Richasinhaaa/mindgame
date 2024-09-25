@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Game | Guess the Word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#play"><i class="fa fa-gamepad"></i> Play</a></li>
+            <li><a href="#scorecard"><i class="fa fa-trophy"></i> Scorecard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="home-section">
+        <div class="content-wrapper">
+            <h1 class="game-title">Mind Game</h1>
+            <p class="tagline">Sharpen your brain, guess the word!</p>
+            <a href="#play" class="play-btn">Play Now</a>
+        </div>
+    </section>
+
+    <!-- Play Game Page (this section will house the word game logic) -->
+    <section id="play" class="play-section">
+        <h2>Select Difficulty</h2>
+        <div class="levels">
+            <button class="level-btn" onclick="startGame('easy')">Easy</button>
+            <button class="level-btn" onclick="startGame('intermediate')">Intermediate</button>
+            <button class="level-btn" onclick="startGame('hard')">Hard</button>
+        </div>
+
+        <div class="game-wrapper">
+            <h1>Guess the word</h1>
+            <div class="content">
+                <input type="text" class="typing-input" maxlength="1">
+                <div class="inputs"></div>
+                <div class="details">
+                    <p class="hint">Hint: <span></span></p>
+                    <p class="guess-left">Remaining Guesses: <span></span></p>
+                    <p class="wrong-letters">Wrong Letters: <span></span></p>
+                </div>
+                <button class="reset-btn">Reset Game</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scorecard Page -->
+    <section id="scorecard" class="scorecard-section">
+        <h2>Scorecard</h2>
+        <p>Target Score: <span id="target-score">0</span></p>
+        <p>Highest Score: <span id="high-score">0</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
